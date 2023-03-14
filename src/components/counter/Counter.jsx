@@ -5,16 +5,16 @@ const Counter = () => {
   const { counter, increment, decrement, resetCount } = useCounter();
 
   return (
-    <div className="my-2 card border-0 shadow-sm">
+    <div className="container my-2 p-1 card border-0 shadow-sm">
       <div className="card-header">
         <div className="card-title text-center">
-          <h3 className="text-secondary">Counter</h3>
+          <h3 className="text-secondary fw-bold">Counter</h3>
         </div>
       </div>
       <div className="card-body text-center d-flex justify-content-center">
         <p className="m-0 rounded shadow-sm w-50">{counter}</p>
       </div>
-      <div className="card-footer">
+      <div className="card-footer d-flex justify-content-around">
         <button
           className="btn btn-success btn-lg-success me-1"
           onClick={() => increment(1)}
