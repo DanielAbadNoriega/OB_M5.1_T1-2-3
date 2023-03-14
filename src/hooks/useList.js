@@ -24,15 +24,22 @@ const useList = (initialValue = []) => {
     setSortValues(sorted);
   };
 
+  // Reverse list
+  const reverseList = () => {
+    const reversed = [...sortValues].reverse();
+    setSortValues(reversed);
+  };
+
   // Clear list
   const clearList = () => {
     setValue([]);
+    setSortValues([]);
   };
 
   // Is Empty
   const isEmpty = () => value.length === 0;
 
-  return { value, sortValues, setValue, push, remove, sortList, clearList, isEmpty };
+  return { value, sortValues, setValue, push, remove, sortList, reverseList, clearList, isEmpty };
 };
 
 export default useList;

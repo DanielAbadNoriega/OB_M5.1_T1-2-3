@@ -57,9 +57,18 @@ const TaskList = () => {
               </li>
             ))}
           </div>
-          <div className="card-footer">
+          <div className="card-footer d-flex align-items-center justify-content-around">
             <button className="btn btn-primary btn-lg" onClick={handleSort}>
               SORT
+            </button>
+            <button
+              className="btn btn-warning btn-lg"
+              onClick={tasks.reverseList}
+            >
+              REVERSE
+            </button>
+            <button className="btn btn-danger btn-lg" onClick={tasks.clearList}>
+              DELETE
             </button>
           </div>
         </div>
