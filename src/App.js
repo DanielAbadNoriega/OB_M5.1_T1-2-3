@@ -1,23 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Counter from "./components/counter/Counter";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container container-lg d-flex flex-column align-items-center justify-content-center mt-3 p-2 rounded shadow">
+      <h1 className="bg-light rounded shadow p-2 text-secondary fw-bold">Open Bootcamp:<span style={{"color": "lightblue"}}> React JS.</span></h1>
+      <h2 className="bg-light rounded shadow p-2 text-secondary fw-bold">Hooks Personalizados</h2>
+      <Counter />
     </div>
   );
 }
